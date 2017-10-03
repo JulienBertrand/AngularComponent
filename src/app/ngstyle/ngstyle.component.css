@@ -1,0 +1,12 @@
+.first {
+  color: red;
+  }
+.last{
+  color: greenyellow;
+}
+.pair{
+  background: darkgrey;
+}
+.italic {
+  font-style: italic;
+}

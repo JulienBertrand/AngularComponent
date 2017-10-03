@@ -1,0 +1,8 @@
+<p>
+  if works!
+</p>
+<button (click)="disparait()">Clique-moi</button>
+<div [hidden]="isHidden">
+<div *ngIf="isDisplay; else title"><p>Je disparais et reapparais</p></div>
+<ng-template #title><p>formation TypeScript</p></ng-template>
+</div>

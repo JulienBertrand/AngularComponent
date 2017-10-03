@@ -1,0 +1,12 @@
+<p>
+  variable works!
+</p>
+<div>
+  <input type="text"
+         #customVariable
+         placeholder="Saisis le neant">
+  <div>test variable locale : {{customVariable.value}}</div>
+</div>
+<div>
+  <button (click)="customVariable.focus(); customVariable.value=''">Focus the input</button>
+</div>

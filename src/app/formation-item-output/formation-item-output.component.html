@@ -1,0 +1,10 @@
+<p>
+  formation-item-output works!
+</p>
+<div>
+  <h4 (click)="selectFormation()">{{formation.nom | titlecase}}</h4>
+  <p>{{formation.description}}</p>
+  <p>{{formation.prix | currency:'EUR'}}</p>
+  <p>{{formation.dateDebut | date: 'dd/MM/yyyy'}}</p>
+  <p>{{formation.dateFin | date: 'dd/MM/yyyy'}}</p>
+</div>

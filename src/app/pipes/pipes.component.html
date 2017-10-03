@@ -1,0 +1,17 @@
+<p>
+  pipes works!
+</p>
+<div [ngSwitch]="formations.length">
+  <p *ngSwitchCase="0">Aucune formation disponibles</p>
+  <p *ngSwitchCase="1">Une formation disponible : </p>
+  <p *ngSwitchDefault>Formations disponibles :</p>
+</div>
+<ul>
+  <li *ngFor="let formation of formations; index as i; first as f; last as l; even as e">
+    <p [ngClass]="{'first':f, 'last':l, 'pair':e, 'italic':e }" >
+      {{i}} - {{formation.nom | titlecase}}<br>
+                  {{formation.prix | currency:'EUR'}}<br>
+                  {{formation.dateDebut | date: 'dd/MM/yyyy'}}<br>
+                  {{formation.dateFin | date: 'dd/MM/yyyy'}}</p>
+  </li>
+</ul>
